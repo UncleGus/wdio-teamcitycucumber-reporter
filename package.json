@@ -1,0 +1,62 @@
+{
+  "_args": [
+    [
+      "wdio-teamcitycucumber-reporter@1.0.1",
+      "C:\\Users\\xpdkarl\\source\\Workspaces\\TEC-LearnerJourney\\cucumber.js-tests-for-mcp-project"
+    ]
+  ],
+  "_development": true,
+  "_from": "wdio-teamcitycucumber-reporter@^1.0.0",
+  "_id": "wdio-teamcitycucumber-reporter@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-lbkFAGucvKbiDJOKy1hG8oFru0oVWH+tyC2f8Nbyw3TD1E5fYpuHYNwSi4FpbHVxr2Y8jslsHsk9Tu4xUclvaQ==",
+  "_location": "/wdio-teamcitycucumber-reporter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "wdio-teamcitycucumber-reporter@^1.0.0",
+    "name": "wdio-teamcitycucumber-reporter",
+    "escapedName": "wdio-teamcitycucumber-reporter",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/wdio-teamcitycucumber-reporter/-/wdio-teamcitycucumber-reporter-1.0.1.tgz",
+  "_shasum": "cff1fa8e122405dd954ff541cc3f7b146ebd0f75",
+  "_spec": "wdio-teamcitycucumber-reporter@^1.0.0",
+  "_where": "C:\\Users\\xpdkarl\\source\\Workspaces\\TEC-LearnerJourney\\cucumber.js-tests-for-mcp-project",
+  "author": {
+    "name": "David Karl"
+  },
+  "bugs": {
+    "url": "https://github.com/UncleGus/wdio-teamcitycucumber-reporter/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Aggregates cucumber steps (Given/When/Then) up to the scenario level for TeamCity",
+  "homepage": "https://github.com/UncleGus/wdio-teamcitycucumber-reporter#readme",
+  "keywords": [
+    "webdriver.io",
+    "webdriver",
+    "selenium",
+    "cucumber",
+    "reporter",
+    "test"
+  ],
+  "license": "GPL-3.0",
+  "main": "build/reporter.js",
+  "name": "wdio-teamcitycucumber-reporter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UncleGus/wdio-teamcitycucumber-reporter.git"
+  },
+  "scripts": {
+    "test": "test/test.js"
+  },
+  "version": "1.0.1"
+}
