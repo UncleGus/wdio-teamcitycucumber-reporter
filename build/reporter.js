@@ -88,7 +88,7 @@ var TccReporter = function (_events$EventEmitter) {
                 // this will be handled as a failed test, so an error object is required
                 testContext[event.parent].error = {
                     message: 'Step is not defined',
-                    stack: event.title
+                    stack: `Step '${event.title}' is undefined`
                 };
                 testContext[event.parent].step = event.title;
             }
