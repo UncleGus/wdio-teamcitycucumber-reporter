@@ -1,13 +1,13 @@
 {
   "_args": [
     [
-      "wdio-teamcitycucumber-reporter@1.0.1",
+      "wdio-teamcitycucumber-reporter@1.0.3",
       "C:\\Users\\xpdkarl\\source\\Workspaces\\TEC-LearnerJourney\\cucumber.js-tests-for-mcp-project"
     ]
   ],
   "_development": true,
-  "_from": "wdio-teamcitycucumber-reporter@^1.0.0",
-  "_id": "wdio-teamcitycucumber-reporter@1.0.1",
+  "_from": "wdio-teamcitycucumber-reporter@^1.0.3",
+  "_id": "wdio-teamcitycucumber-reporter@1.0.3",
   "_inBundle": false,
   "_integrity": "sha512-lbkFAGucvKbiDJOKy1hG8oFru0oVWH+tyC2f8Nbyw3TD1E5fYpuHYNwSi4FpbHVxr2Y8jslsHsk9Tu4xUclvaQ==",
   "_location": "/wdio-teamcitycucumber-reporter",
@@ -15,20 +15,20 @@
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "wdio-teamcitycucumber-reporter@^1.0.0",
+    "raw": "wdio-teamcitycucumber-reporter@^1.0.3",
     "name": "wdio-teamcitycucumber-reporter",
     "escapedName": "wdio-teamcitycucumber-reporter",
-    "rawSpec": "^1.0.0",
+    "rawSpec": "^1.0.3",
     "saveSpec": null,
-    "fetchSpec": "^1.0.0"
+    "fetchSpec": "^1.0.3"
   },
   "_requiredBy": [
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/wdio-teamcitycucumber-reporter/-/wdio-teamcitycucumber-reporter-1.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/wdio-teamcitycucumber-reporter/-/wdio-teamcitycucumber-reporter-1.0.3.tgz",
   "_shasum": "cff1fa8e122405dd954ff541cc3f7b146ebd0f75",
-  "_spec": "wdio-teamcitycucumber-reporter@^1.0.0",
+  "_spec": "wdio-teamcitycucumber-reporter@^1.0.3",
   "_where": "C:\\Users\\xpdkarl\\source\\Workspaces\\TEC-LearnerJourney\\cucumber.js-tests-for-mcp-project",
   "author": {
     "name": "David Karl"
@@ -58,5 +58,5 @@
   "scripts": {
     "test": "test/test.js"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
