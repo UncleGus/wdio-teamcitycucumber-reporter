@@ -48,7 +48,8 @@ var TccReporter = function (_events$EventEmitter) {
                 console.log(`##teamcity[testSuiteStarted flowId='${escape(event.specHash)}' name='${escape(event.title)}']`);
             } else {
                 // output test description (scenario)
-                console.log(`##teamcity[testStarted flowId='${escape(event.specHash)}' name='${escape(event.title)}' captureStandardOutput='false']`);
+                const scenarioNumber = event.title.slice(0, 2);
+                console.log(`##teamcity[testStarted flowId='${escape(event.specHash)}${scenarioNumber}' name='${escape(event.title)}' captureStandardOutput='false']`);
                 // add a child to the testContext object for tracking the statuses of the step 'tests'
                 testContext[event.uid] = {};
                 // assume an unknown state of the testing until individual step 'tests' are evaluated
@@ -97,11 +98,14 @@ var TccReporter = function (_events$EventEmitter) {
         _this.on('suite:end', function (event) {
             // if a child object exists on testContext, then this is a test (scenario) that is ending
             if (testContext[event.uid]) {
+                const scenarioNumber = event.title.slice(0, 2);
                 switch(testContext[event.uid].status) {
                     // this is a pass as nothing has happened to indicate a failure
-                    case 'unknown': console.log(`##teamcity[testFinished flowId='${escape(event.specHash)}' name='${escape(event.title)}']`); break;
+                    case 'unknown':
+                        console.log(`##teamcity[testFinished flowId='${escape(event.specHash)}${scenarioNumber}' name='${escape(event.title)}']`); break;
                     // all other statuses (i.e. 'fail' or 'pending') are treated as failure
-                    default: console.log(`##teamcity[testFailed flowId='${escape(event.specHash)}' name='${escape(event.title)}' message='In step: ${escape(testContext[event.uid].step)}|n${escape(testContext[event.uid].error.message)}' details='${escape(testContext[event.uid].error.stack)}']`); break;
+                    default:
+                        console.log(`##teamcity[testFailed flowId='${escape(event.specHash)}${scenarioNumber}' name='${escape(event.title)}' message='In step: ${escape(testContext[event.uid].step)}|n${escape(testContext[event.uid].error.message)}' details='${escape(testContext[event.uid].error.stack)}']`); break;
                 }
             } else {
                 // this is the test suite (feature) that is ending
