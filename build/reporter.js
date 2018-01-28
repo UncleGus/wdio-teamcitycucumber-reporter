@@ -106,6 +106,7 @@ var TccReporter = function (_events$EventEmitter) {
                     // all other statuses (i.e. 'fail' or 'pending') are treated as failure
                     default:
                         console.log(`##teamcity[testFailed flowId='${escape(event.specHash)}${scenarioNumber}' name='${escape(event.title)}' message='In step: ${escape(testContext[event.uid].step)}|n${escape(testContext[event.uid].error.message)}' details='${escape(testContext[event.uid].error.stack)}']`); break;
+                        console.log(`##teamcity[testFailed flowId='${escape(event.specHash)}' name='${escape(event.title)}' message='In step: ${escape(testContext[event.uid].step)}|n${escape(testContext[event.uid].error.message)}' details='${escape(testContext[event.uid].error.stack)}']`); break;
                 }
             } else {
                 // this is the test suite (feature) that is ending
